@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task js</title>
+    <link rel="stylesheet" href="./static/styles/all.min.css">
+    <link rel="stylesheet" href="./static/styles/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-left">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+                <a href="">HOME</a>
+                <a href="">SHOP</a>
+                <a href="">BLOG</a>
+                <a href="">PAGES</a>
+                <a href="">ABOUT</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="logo">
+                <img src="./static/photos/logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <a onclick="convert()">
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </a>
+                <a>
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a >
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a >
+                    <!-- <span></span> -->
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+               
+            </div>
+            
+        </div>
+        <aside class="search-items" id="searchI">
+            <h3>WHAT ARE YOU LOOKING FOR?</h3>
+            <div><input type="text" placeholder="Search Products"> <i class="fa-solid fa-magnifying-glass"></i></div>
+            <h4>QUICKLINKS</h4>
+            <h4>New Arrivals</h4>
+            <h4>Dresses</h>
+            <h4>Accessories</h4>
+            <h4>Footwear</h4>
+            <h4>swealshirt</h4>
+
+        </aside>
+    </div>
+</header>
+
+<script>
+    var searchIcon = document.getElementById('search');
+    var searchItems = document.getElementById('searchI');
+    function convert(){
+        if(searchIcon.classList.contains('fa-magnifying-glass'))
+        {
+        searchIcon.classList.remove('fa-magnifying-glass');
+        searchIcon.classList.add('fa-xmark');
+        searchItems.style.display = 'block';
+        }
+        else {
+            searchIcon.classList.add('fa-magnifying-glass');
+            searchIcon.classList.remove('fa-xmark');
+            searchItems.style.display = 'none';
+
+        }
+
+    }
+    
+</script>
+</body>
+</html>
