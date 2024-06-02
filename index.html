@@ -41,7 +41,7 @@
             </div>
             
         </div>
-        <aside class="search-items" id="searchI">
+        <main class="search-items" id="searchI">
             <h3>WHAT ARE YOU LOOKING FOR?</h3>
             <div><input type="text" placeholder="Search Products"> <i class="fa-solid fa-magnifying-glass"></i></div>
             <h4>QUICKLINKS</h4>
@@ -51,29 +51,10 @@
             <h4>Footwear</h4>
             <h4>swealshirt</h4>
 
-        </aside>
+        </main>
     </div>
 </header>
 
-<script>
-    var searchIcon = document.getElementById('search');
-    var searchItems = document.getElementById('searchI');
-    function convert(){
-        if(searchIcon.classList.contains('fa-magnifying-glass'))
-        {
-        searchIcon.classList.remove('fa-magnifying-glass');
-        searchIcon.classList.add('fa-xmark');
-        searchItems.style.display = 'block';
-        }
-        else {
-            searchIcon.classList.add('fa-magnifying-glass');
-            searchIcon.classList.remove('fa-xmark');
-            searchItems.style.display = 'none';
-
-        }
-
-    }
-    
-</script>
+<script src="./static/js/main.js"></script>
 </body>
 </html>
