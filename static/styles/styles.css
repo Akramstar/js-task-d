@@ -251,4 +251,8 @@ section#task3 .bubble{
     h2{
         font-size: 1em;
     }
+    .fcontainer i {
+        font-size: 1em;
+        padding: 0.2em;
+    }
 }
