@@ -135,6 +135,7 @@ section#fsection {
     position: absolute;
     margin-top: 10px;
     transition: all 0.8s ease-in-out;
+    z-index: 2;
 }
 #prod_img:hover {
     transform: scale(1.2);
@@ -236,4 +237,18 @@ section#task3 .bubble{
     padding: 2%;
     border-radius: 15px;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 900px){
+    body {
+        font-size: 1em;
+        
+    }
+    .nav-left{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 1em;
+    }
 }

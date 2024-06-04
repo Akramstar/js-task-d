@@ -126,6 +126,7 @@ function scrollit(){
   if (scrollY > 200)
     {
       scrollSection1.classList.add('bgscroll');
+      scrollSection1.crea
     }
   else {
     scrollSection1.classList.remove('bgscroll');
