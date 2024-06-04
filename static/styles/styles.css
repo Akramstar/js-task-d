@@ -41,9 +41,14 @@
     right: 0;
     display: none;
     transition: all 0.8s ;
+    z-index: 5;
 }
 .search-items h4 {
     margin-block: 1em;
+}
+.search-items h4 a{
+    text-decoration: none;
+    color: black;
 }
 .search-items div input{
     width: 90%;
@@ -51,5 +56,184 @@
     border: none;
     border-bottom: 2px solid black;
     background-color: beige;
+    outline: none;
+}
 
+
+/* new section */
+section#fsection {
+    max-width: 100%;
+
+}
+.fcontainer {
+    max-width: 100%;
+    position: relative;
+}
+.title-holder {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.title-holder p {
+    text-align: center;
+    font-weight: 800;
+}
+.fcontainer .item-img {
+    width: 100%;
+}
+
+.fcontainer i{
+    font-size: 1.1em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.8s ease;
+}
+
+.fcontainer .icon-one {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+}
+
+.fcontainer .icon-two {
+    
+    position: absolute;
+    top: 50%;
+    left: 11%;
+
+}
+.fcontainer .icon-three {
+    font-size: 1.1em;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+}
+.fcontainer .icon-four {
+    position: absolute;
+    top: 45%;
+    left: 67%;
+
+}
+.fcontainer .icon-five {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+.fcontainer i:hover
+{
+    transform: scale(1.1);
+}
+
+#prod_img {
+    background-color: white;
+    border-radius: 12px;
+    padding: 26%;    
+    position: absolute;
+    margin-top: 10px;
+    transition: all 0.8s ease-in-out;
+}
+#prod_img:hover {
+    transform: scale(1.2);
+}
+/* let's add a class to display none */
+.hide-prod{
+    display: none;
+    
+}
+.shapetriangle
+{
+    position: absolute;
+    top: -10px;
+    left: 15%;
+    /* transform: translate(20%, -50%); */
+    width:20px;
+    height:20px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: white;
+}
+/* task3 */
+
+section#task3 {
+    max-width: 100%;
+}
+section#task3 .bubble{
+    border-radius: 25px;
+    max-width: 50%;
+}
+
+
+.bgscroll {
+    background-color: #61CE70;
+    color: white;
+}
+
+.bubble {
+    position: relative;
+}
+.bubble.section1::after{
+    content: "one";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section2::after{
+    content: "two";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section3::after{
+    content: "three";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section4::after{
+    content: "four";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section5::after{
+    content: "five";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section6::after{
+    content: "six";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+.bubble.section7::after{
+    content: "seven";
+    position: absolute;
+    right: 100px;
+    top: 0;
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 1.1em;
 }

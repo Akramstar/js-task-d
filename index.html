@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./static/styles/all.min.css">
     <link rel="stylesheet" href="./static/styles/styles.css">
 </head>
-<body>
+<body onscroll="scrollit()">
 <header>
     <div class="container">
         <div class="nav">
@@ -43,18 +43,135 @@
         </div>
         <main class="search-items" id="searchI">
             <h3>WHAT ARE YOU LOOKING FOR?</h3>
-            <div><input type="text" placeholder="Search Products"> <i class="fa-solid fa-magnifying-glass"></i></div>
-            <h4>QUICKLINKS</h4>
-            <h4>New Arrivals</h4>
-            <h4>Dresses</h>
-            <h4>Accessories</h4>
-            <h4>Footwear</h4>
-            <h4>swealshirt</h4>
+            <div><input type="text" placeholder="Search Products" maxlength="200"> <i class="fa-solid fa-magnifying-glass"></i></div>
+            <h4><a href="#">QUICKLINKS</a></h4>
+            <h4><a href="#">New Arrivals</a></h4>
+            <h4><a href="#">Dresses</a></h>
+            <h4><a href="#">Accessories</a></h4>
+            <h4><a href="#">Footwear</a></h4>
+            <h4><a href="#">swealshirt</a></h4>
 
         </main>
     </div>
 </header>
 
+<section id="fsection">
+    <div class="fcontainer">
+        <div class="title-holder">
+        <h2>Living Room Furniture</h2>
+        <p>Discount 50%</p>
+        </div>
+        <img src="./static/photos/lookbook-bg.jpg" alt="" class="item-img">
+
+    
+        <!-- Item -->
+        <div class="icon-one" onclick="Showit(this, './static/photos/prodshelf.png')" onblur="displayN()">
+            <i class="fa-solid fa-plus">
+            </i>
+            <div id="prod_img" class="hide-prod">
+                <div class="shapetriangle"></div>
+                <a href="#">
+                <img src="" alt="" width="100">
+                <h5>price: 20$</h5>
+                </a>
+               
+                </div>
+            </div>
+            <!-- End Item -->
+            <!-- Item -->
+        <div class="icon-two" onclick="Showit(this, './static/photos/lovepik-potted-flower.png')" onblur="displayN()">
+            <i class="fa-solid fa-plus">
+            </i>
+            <div id="prod_img" class="hide-prod">
+                <div class="shapetriangle"></div>
+                <a href="#">
+                    <img src="" alt="" width="100">
+                    <h5>price: 20$</h5>
+                </a>
+                </div>
+            </div>
+            <!-- End Item -->
+            <!-- Item -->
+        <div class="icon-three" onclick="Showit(this, './static/photos/sofa-co.png')" onblur="displayN()">
+            <i class="fa-solid fa-plus">
+            </i>
+            <div id="prod_img" class="hide-prod">
+                <div class="shapetriangle"></div>
+                <a href="#">
+                    <img src="" alt="" width="100">
+                    <h5>price: 20$</h5>
+                </a>
+                </div>
+            </div>
+            <!-- End Item -->
+            <!-- Item -->
+        <div class="icon-four" onclick="Showit(this, './static/photos/pillow.png')" onblur="displayN()">
+            <i class="fa-solid fa-plus">
+            </i>
+            <div id="prod_img" class="hide-prod">
+                <div class="shapetriangle"></div>
+                <a href="#">
+                    <img src="" alt="" width="100">
+                    <h5>price: 20$</h5>
+                </a>
+                </div>
+            </div>
+            <!-- End Item -->
+             <!-- Item -->
+        <div class="icon-five" onclick="Showit(this, './static/photos/pngtree-indoor-plant.png')" onblur="displayN()">
+            <i class="fa-solid fa-plus">
+            </i>
+            <div id="prod_img" class="hide-prod">
+                <div class="shapetriangle"></div>
+                <a href="#">
+                    <img src="" alt="" width="100">
+                    <h5>price: 20$</h5>
+                </a>
+                </div>
+            </div>
+            <!-- End Item -->
+
+        
+
+        
+    </div>
+</section>
+
+<!-- Section 3 task 3 -->
+
+<section id="task3">
+    <div class="bubble section1">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section2">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section3">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section4">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section5">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section6">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+    <div class="bubble section7">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, assumenda earum cupiditate voluptas corporis eaque incidunt cumque fugiat ad animi ratione dolore officiis quod ipsum ab doloremque iure obcaecati? Sunt!</p>
+    </div>
+</section>
+
+
 <script src="./static/js/main.js"></script>
+
 </body>
 </html>
