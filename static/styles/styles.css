@@ -120,7 +120,7 @@ section#fsection {
 .fcontainer .icon-five {
     position: absolute;
     bottom: 4%;
-    right: 4%;
+    left: 85%;
 }
 
 .fcontainer i:hover
